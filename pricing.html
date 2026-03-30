@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FieldForce</title>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo"><a href="/"><img src="assets/images/logo.png" alt=""></a></div>
+
+      <!-- Menu -->
+      <nav class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/#features">Features</a>
+        <a href="/#dashboard">Dashboard</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="mobile-cta">
+          <a href="login.html" class="btn-outline">Login</a>
+          <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
+        </div>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="cta-buttons">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+  </header>
+  <!-- Hero -->
+  <section class="pricing-section">
+    <h1>Flexible Pricing for Field Teams</h1>
+    <p>Scale your field operations with the right plan</p>
+
+    <!-- Toggle -->
+    <div class="pricing-toggle">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider"></span>
+      </label>
+      <span>Yearly</span>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="pricing-grid">
+
+      <!-- Starter -->
+      <div class="pricing-card">
+        <h3>Starter</h3>
+        <h2 class="price" data-month="29.00" data-year="290.00">€29.00</h2>
+        <p>For small field teams getting started</p>
+
+        <ul>
+          <li>✔ Task Assignment</li>
+          <li>✔ Technician Mobile App</li>
+          <li>✔ Basic Reporting</li>
+          <li>✔ Up to 5 Users</li>
+        </ul>
+
+        <a href="contact.html" class="btn-outline" style="margin-top: 60px; display: block;">Get Started</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="pricing-card popular">
+        <span class="badge">Most Popular</span>
+        <h3>Pro</h3>
+        <h2 class="price" data-month="59.00" data-year="590.00">€59.00</h2>
+        <p>Best for growing field operations</p>
+
+        <ul>
+          <li>✔ Everything in Starter</li>
+          <li>✔ GPS Tracking & Check-in/out</li>
+          <li>✔ Photo & Signature Capture</li>
+          <li>✔ SLA & Priority Management</li>
+          <li>✔ Up to 25 Users</li>
+        </ul>
+
+        <a href="contact.html" class="btn-primary" style="display: block;">Get Started</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <h3>Enterprise</h3>
+        <h2 class="price" data-month="99.00" data-year="990.00">€99.00</h2>
+        <p>For large teams & enterprises</p>
+
+        <ul>
+          <li>✔ Unlimited Users</li>
+          <li>✔ Advanced Analytics Dashboard</li>
+          <li>✔ API & Integrations</li>
+          <li>✔ Dedicated Support</li>
+          <li>✔ Custom Workflows</li>
+        </ul>
+
+        <a href="contact.html" class="btn-outline" style="margin-top: 30px; display: block;">Get Started</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- Product -->
+      <div class="footer-col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/#dashboard">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="#">Privacy Policy</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="contact-info" style="background: none; display: inherit; padding: inherit;">
+          <li>Email: contact@fieldforce.com</li>
+          <li>Phone: +353 1 555 0192</li>
+          <li>Address: Strawinskylaan, 3051
+            1077 ZX, Amsterdam,
+            Netherlands</li>
+        </ul>
+
+      </div>
+
+      <!-- Social -->
+
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2026 fieldforce. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <div class="modal" id="demoModal">
+
+    <div class="modal-content" id="modalBox">
+
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <h2>Request a Demo</h2>
+
+      <form id="demoForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <!-- <input type="text" placeholder="Farm Size"> -->
+        <input type="text" placeholder="Location" required>
+        <input type="text" placeholder="City" required>
+
+        <p class="" id="formError"></p>
+
+        <button type="submit">Submit Request</button>
+
+      </form>
+
+    </div>
+
+  </div>
+  <script>
+    const modal = document.getElementById("demoModal");
+    const form = document.getElementById("demoForm");
+    const error = document.getElementById("formError");
+    const box = document.getElementById("modalBox");
+
+    function openModal() {
+      document.getElementById("demoModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("demoModal").style.display = "none";
+    }
+
+    /* close outside */
+    window.onclick = function (e) {
+      const modal = document.getElementById("demoModal");
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    /* FORM VALIDATION */
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      if (name === "" || email === "") {
+        error.innerText = "Please fill all required fields";
+
+        box.classList.add("shake");
+        setTimeout(() => box.classList.remove("shake"), 300);
+      } else {
+        error.classList.add("success");
+        error.innerText = "✅ Request submitted successfully!";
+
+        form.reset();
+      }
+    });
+
+    const toggle = document.getElementById("toggle");
+    const prices = document.querySelectorAll(".price");
+
+    function animateValue(el, start, end) {
+      let duration = 300;
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        let progress = Math.min((currentTime - startTime) / duration, 1);
+        let value = Math.floor(progress * (end - start) + start);
+        el.innerText = "€" + value;
+
+        if (progress < 1) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    toggle.addEventListener("change", () => {
+      prices.forEach(price => {
+        let current = parseInt(price.innerText.replace("€", ""));
+        let target = toggle.checked
+          ? parseInt(price.dataset.year)
+          : parseInt(price.dataset.month);
+
+        animateValue(price, current, target);
+      });
+    });
+    const Hamburger = document.getElementById("menuToggle");
+    const nav = document.getElementById("navLinks");
+
+    Hamburger.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

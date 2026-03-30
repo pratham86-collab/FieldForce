@@ -1,0 +1,148 @@
+/* About Hero */
+.about-hero {
+    padding: 80px 20px;
+    background: #020617;
+    color: #fff;
+}
+
+.about-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.about-hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-hero-text p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.about-hero-text .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Image */
+.about-hero-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .about-hero-container {
+        flex-direction: column;
+    }
+}
+
+/* Sections */
+/* Common section */
+.about-block {
+    padding: 40px 20px;
+}
+
+.about-block.dark {
+    background: #EB9F3E;
+}
+
+/* Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Cards */
+.about-card {
+    background: #121214;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.about-card h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Content */
+.about-content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #121214;
+}
+.about-content h2{
+   margin-bottom: 10px;
+   font-size: 28px;
+}
+
+/* Stats */
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    background: #121214;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.stat h2 {
+    font-size: 32px;
+}
+
+/* Team */
+.team {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

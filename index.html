@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FieldForce</title>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo"><a href="/"><img src="assets/images/logo.png" alt=""></a></div>
+
+      <!-- Menu -->
+      <nav class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="#features">Features</a>
+        <a href="/#dashboard">Dashboard</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="mobile-cta">
+          <button class="btn-outline">Login</button>
+          <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
+        </div>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="cta-buttons">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+  </header>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-container">
+      <video autoplay muted loop class="hero-video">
+        <source src="assets/images/banner-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <!-- Left Content -->
+      <div class="hero-content">
+        <h1>
+          Mobile-first task management for field technicians & on-site teams
+        </h1>
+
+        <p>
+          Replace paper workflows with real-time task tracking, GPS monitoring,
+          and smart reporting — all in one platform.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="login.html" class="btn-primary">🚀 Get Started</a>
+          <a href="#" class="btn-outline" onclick="openModal()">📱 View Demo</a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero-image">
+        <img src="assets/images/home-banner.png" alt="App Preview">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- features -->
+  <section class="highlights">
+    <div class="section-header">
+      <h2>Powerful Features for Field Teams</h2>
+      <p>Everything you need to manage tasks, track teams, and improve productivity in real-time</p>
+    </div>
+    <div class="container highlights-container">
+
+      <div class="highlight-card">
+        <div class="icon">📍</div>
+        <h3>Real-time GPS Tracking</h3>
+      </div>
+
+      <div class="highlight-card">
+        <div class="icon">📋</div>
+        <h3>Smart Task Assignment</h3>
+      </div>
+
+      <div class="highlight-card">
+        <div class="icon">📸</div>
+        <h3>Photo & Signature Capture</h3>
+      </div>
+
+      <div class="highlight-card">
+        <div class="icon">📊</div>
+        <h3>Live Reporting Dashboard</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <h2>Advanced Features Built for Efficiency</h2>
+      <p>Streamline operations, empower your field team, and gain complete visibility</p>
+    </div>
+    <div class="container">
+
+      <!-- Section Heading -->
+
+      <div class="feature-card">
+        <!-- Feature 1 -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <h3>Task Management</h3>
+            <p>
+              Assign tasks with priority, SLA, and deadlines to field teams.
+            </p>
+          </div>
+          <div class="feature-image">
+            <img src="assets/images/taskmange.png" alt="Task Management">
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-row reverse">
+          <div class="feature-text">
+            <h3>Technician Mobile App</h3>
+            <ul>
+              <li>Daily task list</li>
+              <li>Checklist-based workflows</li>
+              <li>Upload photos & capture signatures</li>
+            </ul>
+          </div>
+          <div class="feature-image">
+            <img src="assets/images/mobile-app.png" alt="Mobile App" style="width: 200px;">
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <h3>GPS Tracking</h3>
+            <p>
+              Track technician movement with live location and check-in/out logs.
+            </p>
+          </div>
+          <div class="feature-image">
+            <img src="assets/images/gps.png" alt="GPS Tracking">
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-row reverse">
+          <div class="feature-text">
+            <h3>Reporting Dashboard</h3>
+            <p>
+              Monitor performance with real-time KPIs and insights.
+            </p>
+          </div>
+          <div class="feature-image">
+            <img src="assets/images/report.png" alt="Reporting">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works">
+
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="section-header dark">
+        <h2>How It Works</h2>
+        <p>Simple workflow to manage your field operations efficiently</p>
+      </div>
+
+      <!-- Steps -->
+      <div class="steps">
+
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Assign Tasks</h3>
+          <p>Dispatcher assigns tasks with SLA & priority</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Execute in Field</h3>
+          <p>Technicians complete tasks with checklist, photos & signatures</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Track & Analyze</h3>
+          <p>Managers monitor progress and performance in real-time</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Dashboard -->
+  <section class="screens" id="dashboard">
+
+    <div class="container dashboard-container">
+
+      <!-- Heading -->
+      <div class="section-header dark">
+        <h2>Product Screens</h2>
+        <p>Explore how FieldForce works across web and mobile</p>
+      </div>
+
+      <!-- Grid -->
+      <div class="screens-grid">
+
+        <div class="screen-card">
+          <img src="assets/images/Web-Dashboard.png" alt="">
+          <h4>Dispatcher Web Dashboard</h4>
+        </div>
+
+        <div class="screen-card">
+          <img src="assets/images/mobile-app.png" alt="" style="object-fit: contain;">
+          <h4>Technician App Home</h4>
+        </div>
+
+        <div class="screen-card">
+          <img src="assets/images/Task.png" alt="">
+          <h4>Task Detail Screen</h4>
+        </div>
+
+        <div class="screen-card">
+          <img src="assets/images/map.png" alt="">
+          <h4>Map & Route Screen</h4>
+        </div>
+
+        <div class="screen-card">
+          <img src="assets/images/report.png" alt="">
+          <h4>Reporting Dashboard</h4>
+        </div>
+
+        <div class="screen-card">
+          <img src="assets/images/team.png" alt="">
+          <h4>Team Collaboration</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Stats -->
+  <section class="impact">
+
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="section-header dark">
+        <h2>Real Results That Matter</h2>
+        <p>See how FieldForce improves efficiency and performance across teams</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="impact-grid">
+
+        <div class="impact-card">
+          <div class="icon">✅</div>
+          <h3>40%</h3>
+          <p>Fewer missed tasks</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="icon">⏱️</div>
+          <h3>30%</h3>
+          <p>Faster job completion</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="icon">📈</div>
+          <h3>+25%</h3>
+          <p>Improved SLA compliance</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="icon">👁️</div>
+          <h3>100%</h3>
+          <p>Operational visibility</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- testimonials -->
+  <section class="testimonials">
+
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="section-header dark">
+        <h2>What Our Clients Say</h2>
+        <p>Trusted by teams to improve field operations and productivity</p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <p>
+            “FieldForce transformed how we manage field operations. Productivity increased drastically.”
+          </p>
+          <div class="testimonial-user">
+            <div class="avatar">J</div>
+            <div>
+              <h4>John</h4>
+              <span>Operations Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p>
+            “Real-time tracking and task assignment made our team more efficient than ever before.”
+          </p>
+          <div class="testimonial-user">
+            <div class="avatar">L</div>
+            <div>
+              <h4>Luna</h4>
+              <span>Field Supervisor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p>
+            “The reporting dashboard gives us complete visibility and helps improve SLA performance.”
+          </p>
+          <div class="testimonial-user">
+            <div class="avatar">H</div>
+            <div>
+              <h4>Harry</h4>
+              <span>Project Manager</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- Product -->
+      <div class="footer-col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="#">Privacy Policy</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="contact-info" style="background: none; display: inherit; padding: inherit;">
+          <li>Email: contact@fieldforce.com</li>
+          <li>Phone: +353 1 555 0192</li>
+          <li>Address: Strawinskylaan, 3051
+                1077 ZX, Amsterdam,
+                Netherlands</li>
+        </ul>
+
+      </div>
+
+      <!-- Social -->
+      <!-- <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div> -->
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2026 fieldforce. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <div class="modal" id="demoModal">
+
+    <div class="modal-content" id="modalBox">
+
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <h2>Request a Demo</h2>
+
+      <form id="demoForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <!-- <input type="text" placeholder="Farm Size"> -->
+        <input type="text" placeholder="Location" required>
+        <input type="text" placeholder="City" required>
+
+        <p class="" id="formError"></p>
+
+        <button type="submit">Submit Request</button>
+
+      </form>
+
+    </div>
+
+  </div>
+  <script>
+    const modal = document.getElementById("demoModal");
+    const form = document.getElementById("demoForm");
+    const error = document.getElementById("formError");
+    const box = document.getElementById("modalBox");
+
+    function openModal() {
+      document.getElementById("demoModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("demoModal").style.display = "none";
+    }
+
+    /* close outside */
+    window.onclick = function (e) {
+      const modal = document.getElementById("demoModal");
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    /* FORM VALIDATION */
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      if (name === "" || email === "") {
+        error.innerText = "Please fill all required fields";
+
+        box.classList.add("shake");
+        setTimeout(() => box.classList.remove("shake"), 300);
+      } else {
+        error.classList.add("success");
+        error.innerText = "✅ Request submitted successfully!";
+
+        form.reset();
+      }
+    });
+
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navLinks");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
